@@ -124,7 +124,7 @@
                                 <tr>
                                     <th>S/N</th>
                                     <th>Name</th>
-                                    <th>Cost</th>
+                                    <th>Cost (N)</th>
                                     <th>Dimension</th>
                                     <th>Commission</th>
                                     <th>LGA</th>
@@ -139,7 +139,7 @@
                                     <tr>
                                         <td> {{ $loop->iteration }} </td>
                                         <td> {{ $item->land_name }}</td>
-                                        <td> {{ $item->cost }}</td>
+                                        <td> {{ number_format($item->cost, 2) }}</td>
                                         <td> {{ $item->dimension }}</td>
                                         <td> {{ $item->commission }}</td>
                                         <td> {{ $item->lga }}</td>

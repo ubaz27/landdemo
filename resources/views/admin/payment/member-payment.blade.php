@@ -23,7 +23,7 @@
                     <div class="row">
 
                         <div class="col-md-3 ">
-                            <label for="name" class="form-label">Phone Number and Full Name</label> (<span
+                            <label for="name" class="form-label">Phone and Name</label> (<span
                                 class="text-danger">required</span>)
                             {{-- <input id="name" class="form-control" name="name" type="text">
                              --}}
@@ -304,13 +304,21 @@
                             data: 'plot_no'
                         },
                         {
-                            data: 'cost'
+                            data: 'cost',
+                            render: function(data, type, row) {
+
+                                return String(data).replace(/(.)(?=(\d{3})+$)/g, '$1,');
+                            }
                         },
                         {
                             data: 'dimension'
                         },
                         {
-                            data: 'amount'
+                            data: 'amount',
+                            render: function(data, type, row) {
+
+                                return String(data).replace(/(.)(?=(\d{3})+$)/g, '$1,');
+                            }
                         },
                         {
                             data: 'action',

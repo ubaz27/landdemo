@@ -38,7 +38,7 @@
                     <div class="row">
 
                         <div class="col-md-3 ">
-                            <label for="name" class="form-label">Phone Number and Full Name</label> (<span
+                            <label for="name" class="form-label">Phone and Name</label> (<span
                                 class="text-danger">required</span>)
                             {{-- <input id="name" class="form-control" name="name" type="text">
                              --}}

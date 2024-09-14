@@ -92,7 +92,7 @@ lands.commission, plots.plot_no,land_distributions.phone AS member_phone
 FROM agents
 INNER JOIN land_distributions ON agents.id = land_distributions.agent_id
 INNER JOIN plots ON plots.id = land_distributions.plot_id
-INNER JOIN lands ON lands.id = plots.land_id ORDER BY agents.name
+INNER JOIN lands ON lands.id = plots.land_id where agents.phone != '08000000000' ORDER BY agents.name
 ");
 
         return view('admin.agent.show-agent-plots-land', compact('agents'));
