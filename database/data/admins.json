@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Mansur Babagana",
+        "email": "mansurbgana@gmail.com",
+        "position_id": 1,
+        "password": "12345678"
+    },
+    {
+        "id": 2,
+        "name": "Umar Balarabe",
+        "email": "ubaz27@gmail.com",
+        "position_id": 1,
+        "password": "manufa"
+    },
+    {
+        "id": 3,
+        "name": "Baffa Sani",
+        "email": "baffasani@gmail.com",
+        "position_id": 1,
+        "password": "12345678"
+    },
+    {
+        "id": 4,
+        "name": "Dr. Raji Kasim",
+        "email": "maintropproperties@gmail.com",
+        "position_id": 2,
+        "password": "08032845327"
+    }
+]

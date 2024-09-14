@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "position": "ICT"
+    },
+    {
+        "id": 2,
+        "position": "Chairperson"
+    }
+    ,
+    {
+        "id": 3,
+        "position": "Sec"
+    }
+    ,
+    {
+        "id": 4,
+        "position": "Treasurer"
+    }
+]

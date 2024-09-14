@@ -1,0 +1,150 @@
+[
+    {
+        "id": 1,
+        "state": "Abuja (FCT)"
+    },
+    {
+        "id": 2,
+        "state": "Abia"
+    },
+    {
+        "id": 3,
+        "state": "Adamawa"
+    },
+    {
+        "id": 4,
+        "state": "Akwa Ibom"
+    },
+    {
+        "id": 5,
+        "state": "Anambra"
+    },
+    {
+        "id": 6,
+        "state": "Bauchi"
+    },
+    {
+        "id": 7,
+        "state": "Bayelsa"
+    },
+    {
+        "id": 8,
+        "state": "Benue"
+    },
+    {
+        "id": 9,
+        "state": "Borno"
+    },
+    {
+        "id": 10,
+        "state": "Cross River"
+    },
+    {
+        "id": 11,
+        "state": "Delta"
+    },
+    {
+        "id": 12,
+        "state": "Ebonyi"
+    },
+    {
+        "id": 13,
+        "state": "Edo"
+    },
+    {
+        "id": 14,
+        "state": "Ekiti"
+    },
+    {
+        "id": 15,
+        "state": "Enugu"
+    },
+    {
+        "id": 16,
+        "state": "Gombe"
+    },
+    {
+        "id": 17,
+        "state": "Imo"
+    },
+    {
+        "id": 18,
+        "state": "Jigawa"
+    },
+    {
+        "id": 19,
+        "state": "Kaduna"
+    },
+    {
+        "id": 20,
+        "state": "Kano"
+    },
+    {
+        "id": 21,
+        "state": "Katsina"
+    },
+    {
+        "id": 22,
+        "state": "Kebbi"
+    },
+    {
+        "id": 23,
+        "state": "Kogi"
+    },
+    {
+        "id": 24,
+        "state": "Kwara"
+    },
+    {
+        "id": 25,
+        "state": "Lagos"
+    },
+    {
+        "id": 26,
+        "state": "Nassarawa"
+    },
+    {
+        "id": 27,
+        "state": "Niger"
+    },
+    {
+        "id": 28,
+        "state": "Ogun"
+    },
+    {
+        "id": 29,
+        "state": "Ondo"
+    },
+    {
+        "id": 30,
+        "state": "Osun"
+    },
+    {
+        "id": 31,
+        "state": "Oyo"
+    },
+    {
+        "id": 32,
+        "state": "Plateau"
+    },
+    {
+        "id": 33,
+        "state": "Rivers"
+    },
+    {
+        "id": 34,
+        "state": "Sokoto"
+    },
+    {
+        "id": 35,
+        "state": "Taraba"
+    },
+    {
+        "id": 36,
+        "state": "Yobe"
+    },
+    {
+        "id": 37,
+        "state": "Zamfara"
+    }
+]

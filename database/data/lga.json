@@ -1,0 +1,222 @@
+[
+    {
+        "id": 1,
+        "lga": "Ajingi",
+        "state_id": 20
+    },
+    {
+        "id": 2,
+        "lga": "Albasu",
+        "state_id": 20
+    },
+    {
+        "id": 3,
+        "lga": "Bagwai",
+        "state_id": 20
+    },
+    {
+        "id": 4,
+        "lga": "Bebeji",
+        "state_id": 20
+    },
+    {
+        "id": 5,
+        "lga": "Bichi",
+        "state_id": 20
+    },
+    {
+        "id": 6,
+        "lga": "Bunkure",
+        "state_id": 20
+    },
+    {
+        "id": 7,
+        "lga": "Dala",
+        "state_id": 20
+    },
+    {
+        "id": 8,
+        "lga": "Dambatta",
+        "state_id": 20
+    },
+    {
+        "id": 9,
+        "lga": "Dawakin Kudu",
+        "state_id": 20
+    },
+    {
+        "id": 10,
+        "lga": "Dawakin Tofa",
+        "state_id": 20
+    },
+    {
+        "id": 11,
+        "lga": "Doguwa",
+        "state_id": 20
+    },
+    {
+        "id": 12,
+        "lga": "Fagge",
+        "state_id": 20
+    },
+    {
+        "id": 13,
+        "lga": "Gabasawa",
+        "state_id": 20
+    },
+    {
+        "id": 14,
+        "lga": "Garko",
+        "state_id": 20
+    },
+    {
+        "id": 15,
+        "lga": "Garun Mallam",
+        "state_id": 20
+    },
+    {
+        "id": 16,
+        "lga": "Gaya",
+        "state_id": 20
+    },
+    {
+        "id": 17,
+        "lga": "Gezawa",
+        "state_id": 20
+    },
+    {
+        "id": 18,
+        "lga": "Gwale",
+        "state_id": 20
+    },
+    {
+        "id": 19,
+        "lga": "Gwarzo",
+        "state_id": 20
+    },
+    {
+        "id": 20,
+        "lga": "Kabo",
+        "state_id": 20
+    },
+    {
+        "id": 21,
+        "lga": "Kano Municipal",
+        "state_id": 20
+    },
+    {
+        "id": 22,
+        "lga": "Karaye",
+        "state_id": 20
+    },
+    {
+        "id": 23,
+        "lga": "Kibiya",
+        "state_id": 20
+    },
+    {
+        "id": 24,
+        "lga": "Kiru",
+        "state_id": 20
+    },
+    {
+        "id": 25,
+        "lga": "Kumbotso",
+        "state_id": 20
+    },
+    {
+        "id": 26,
+        "lga": "Kunchi",
+        "state_id": 20
+    },
+    {
+        "id": 27,
+        "lga": "Kura",
+        "state_id": 20
+    },
+    {
+        "id": 28,
+        "lga": "Madobi",
+        "state_id": 20
+    },
+    {
+        "id": 29,
+        "lga": "Makoda",
+        "state_id": 20
+    },
+    {
+        "id": 30,
+        "lga": "Minjibir",
+        "state_id": 20
+    },
+    {
+        "id": 31,
+        "lga": "Nasarawa",
+        "state_id": 20
+    },
+    {
+        "id": 32,
+        "lga": "Rano",
+        "state_id": 20
+    },
+    {
+        "id": 33,
+        "lga": "Rimin Gado",
+        "state_id": 20
+    },
+    {
+        "id": 34,
+        "lga": "Rogo",
+        "state_id": 20
+    },
+    {
+        "id": 35,
+        "lga": "Shanono",
+        "state_id": 20
+    },
+    {
+        "id": 36,
+        "lga": "Sumaila",
+        "state_id": 20
+    },
+    {
+        "id": 37,
+        "lga": "Takai",
+        "state_id": 20
+    },
+    {
+        "id": 38,
+        "lga": "Tarauni",
+        "state_id": 20
+    },
+    {
+        "id": 39,
+        "lga": "Tofa",
+        "state_id": 20
+    },
+    {
+        "id": 40,
+        "lga": "Tsanyawa",
+        "state_id": 20
+    },
+    {
+        "id": 41,
+        "lga": "Tudun Wada",
+        "state_id": 20
+    },
+    {
+        "id": 42,
+        "lga": "Ungogo",
+        "state_id": 20
+    },
+    {
+        "id": 43,
+        "lga": "Warawa",
+        "state_id": 20
+    },
+    {
+        "id": 44,
+        "lga": "Wudil",
+        "state_id": 20
+    }
+]
