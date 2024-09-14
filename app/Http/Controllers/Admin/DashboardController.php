@@ -9,6 +9,7 @@ use App\Models\Member;
 use App\Models\Plot;
 use App\models\Agent;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 
 class DashboardController extends Controller
@@ -19,6 +20,10 @@ class DashboardController extends Controller
     }
     public function showDashboard()
     {
+
+        $reset_password = Auth::guard('admin')->user()->reset_password;
+
+
         $land_no = DB::select("select count(id) as no_lands from lands");
         // dd($land_no);
         $member_no = DB::select("select count(id) as no_members from members");
@@ -32,6 +37,10 @@ class DashboardController extends Controller
  lands.id = plots.land_id WHERE plots.is_available = 0
 ORDER BY lands.land_name , plots.plot_no limit 10");
 
-        return view('admin.dashboard', compact('available_plots', 'allocated_plot_no', 'land_no', 'member_no', 'plot_no', 'agent_no'));
+        if ($reset_password == 1) {
+            return view('admin.password-reset');
+        } else {
+            return view('admin.dashboard', compact('available_plots', 'allocated_plot_no', 'land_no', 'member_no', 'plot_no', 'agent_no'));
+        }
     }
 }

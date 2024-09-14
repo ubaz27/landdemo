@@ -71,6 +71,34 @@ class LoginController extends Controller
         return view('admin.change-password');
     }
 
+    public function resetPassword(Request $request)
+    {
+        $request->validate([
+            'current_password' => 'required|string|min:6',
+            'password' => ['required', 'string', 'min:6', 'confirmed'],
+        ]);
+        //dd(auth()->user->password);
+        $currentPasswordStatus = Hash::check($request->current_password, Auth::guard('admin')->user()->password);
+
+        if ($currentPasswordStatus) {
+            Admin::findorFail(Auth::guard('admin')->user()->id)
+                ->update([
+                    'password' => Hash::make($request->password),
+                    'reset_password' => 0,
+                ]);
+
+
+            Auth::logout();
+            $request->session()->invalidate();
+            $request->session()->regenerateToken();
+
+
+            return redirect()->route('admin.showLogin');
+            // return redirect()->back()->with('message', 'Password Updated Successfully');
+        } else {
+            return redirect()->back()->with('message', 'Current Password does not match with Old Password');
+        }
+    }
     public function saveChangePassword(Request $request)
     {
         $request->validate([
@@ -84,8 +112,11 @@ class LoginController extends Controller
             Admin::findorFail(Auth::guard('admin')->user()->id)
                 ->update([
                     'password' => Hash::make($request->password),
+                    'reset_password' => 0,
                 ]);
-            return redirect()->back()->with('message', 'Password Updated Successfully');
+
+            return redirect()->route('admin.showLogin');
+            // return redirect()->back()->with('message', 'Password Updated Successfully');
         } else {
             return redirect()->back()->with('message', 'Current Password does not match with Old Password');
         }

@@ -12,6 +12,7 @@ use App\Http\Controllers\Admin\MemberController;
 use App\Http\Controllers\Admin\ReportController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\PayConsultantController;
+use Illuminate\Support\Facades\DB;
 
 use App\Http\Controllers\Admin\LandSummaryController;
 use App\Http\Controllers\Admin\MemberPaymentController;
@@ -32,7 +33,35 @@ Route::get('/login', [LoginController::class, 'showLogin'])->name('showLogin');
 Route::post('/login', [LoginController::class, 'login'])->name('login');
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 // Dashboard
+Route::get('/dashboard', [DashboardController::class, 'showDashboard'])->name('showDashboard');
+
+// Route::get('/dashboard', function () {
+//     $reset_password = Auth::guard('admin')->user()->reset_password;
+
+//     if ($reset_password == 1) {
+//         return view('admin.password-reset');
+//     } else {
+//         $land_no = DB::select("select count(id) as no_lands from lands");
+//         // dd($land_no);
+//         $member_no = DB::select("select count(id) as no_members from members");
+//         $agent_no = DB::select("select count(id) as no_agents from agents");
+//         $plot_no = DB::select("select count(id) as no_plots from plots");
+//         $allocated_plot_no = DB::select("select count(id) as no_plots from plots where is_available = 1");
+//         $available_plots = DB::select("select
+//       lands.land_name, plots.plot_no, plots.dimension
+//       ,  FORMAT(plots.cost, 'N') AS 'Number'
+//      FROM lands INNER JOIN plots on
+//      lands.id = plots.land_id WHERE plots.is_available = 0
+//     ORDER BY lands.land_name , plots.plot_no limit 10");
+
+//         return view('admin.dashboard', compact('available_plots', 'allocated_plot_no', 'land_no', 'member_no', 'plot_no', 'agent_no'));
+//     }
+// });
+
+
 Route::group(['middleware' => 'auth'], function () {});
+
+Route::middleware(['auth:admin', 'ChangePasswordAdmin'])->group(function () {});
 
 if (Auth::check()) {  //check if user is logged in
 }
@@ -41,12 +70,13 @@ if (Auth::check()) {  //check if user is logged in
 //change password
 Route::get('/change-password', [LoginController::class, 'showChangePassword'])->name('showChangePassword');
 Route::post('/change-password', [LoginController::class, 'saveChangePassword'])->name('saveChangePassword');
+Route::post('/reset-password', [LoginController::class, 'resetPassword'])->name('resetPassword');
 
 //update profile
 
 Route::post('/update-profile', [LoginController::class, 'saveProfile'])->name('saveProfile');
 
-Route::get('/dashboard', [DashboardController::class, 'showDashboard'])->name('showDashboard');
+
 Route::get('/users', [UserController::class, 'showUsers'])->name('showUsers');
 Route::post('/save-users', [UserController::class, 'saveUser'])->name('saveUser');
 Route::post('/user-edit', [UserController::class, 'editUser'])->name('editUser');

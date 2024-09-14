@@ -65,10 +65,8 @@ class AdminController extends Controller
     {
         $request->validate([
             'user_id' => 'required',
-
             'email' => 'required',
             'fullname' => 'required',
-
             'is_active' => 'required',
         ]);
 
@@ -77,7 +75,7 @@ class AdminController extends Controller
         $user->name = $request->fullname;
         if (!empty($request->password)) {
             $user->password = Hash::make($request->password);
-            $user->reset_password = 0;
+            $user->reset_password = 1;
         }
         $user->is_active = $request->is_active;
         $user->save();
