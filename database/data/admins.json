@@ -22,9 +22,9 @@
     },
     {
         "id": 4,
-        "name": "Dr. Raji Kasim",
-        "email": "maintropproperties@gmail.com",
+        "name": "Demo Team",
+        "email": "demo@gmail.com",
         "position_id": 2,
-        "password": "08032845327"
+        "password": ""
     }
 ]
